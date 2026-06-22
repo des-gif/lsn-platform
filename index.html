@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>London Safeguarding Network | Specialist safeguarding &amp; care training</title>
+<meta name="description" content="London Safeguarding Network delivers specialist safeguarding and care training — online and in person — for children's homes, adult care, supported accommodation, foster carers and schools, with CPD evidence built in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a1628;--bg-2:#0c1e3a;--panel:#11305a;--panel-2:#16386a;
+    --paper:#eef3fa;--paper-2:#e4edf7;--card:#fff;--line:#dfe8f3;--line-d:rgba(255,255,255,.10);
+    --ink:#0b1d3a;--text:#0c1e3c;--muted:#566688;--muted-2:#8090ad;--muted-d:#9fb4d4;
+    --blue:#2f78e0;--blue-d:#1f5fc0;--blue-l:#5fa0ff;--emerald:#10b981;--amber:#d6892a;
+    --disp:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--disp);font-weight:700;line-height:1.12;letter-spacing:-.015em;margin:0;color:var(--ink)}
+  p{margin:0}a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--blue-l)}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--disp);font-weight:600;font-size:15px;border-radius:999px;padding:12px 22px;cursor:pointer;border:1.5px solid transparent;transition:transform .15s,background .15s,box-shadow .15s,border-color .15s;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-bl{background:var(--blue);color:#fff;box-shadow:0 12px 26px -10px rgba(47,120,224,.6)}.btn-bl:hover{background:var(--blue-d)}
+  .btn-light{background:#fff;color:var(--ink);border-color:var(--line)}.btn-light:hover{border-color:var(--blue)}
+  .btn-ghost-d{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.24)}.btn-ghost-d:hover{border-color:#fff}
+  .btn-sm{padding:9px 16px;font-size:14px}
+
+  .nav{position:sticky;top:0;z-index:70;background:rgba(10,22,40,.92);backdrop-filter:blur(12px) saturate(140%);border-bottom:1px solid var(--line-d)}
+  .nav .row{display:flex;align-items:center;gap:18px;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+  .brand .mk{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),#1f5fc0);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:14px;flex:none}
+  .brand b{font-family:var(--disp);font-weight:800;font-size:16px;color:#fff;line-height:1.1}
+  .brand span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-d);margin-top:3px}
+  .navlinks{display:none;gap:20px}.navlinks a{font-size:14px;color:var(--muted-d);font-weight:500}.navlinks a:hover{color:#fff}
+  .nav .navcta{display:flex;gap:9px}
+
+  .hero{background:radial-gradient(120% 120% at 88% -10%,var(--panel-2) 0%,var(--bg-2) 45%,var(--bg) 88%);color:#fff;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(45% 45% at 6% 120%,rgba(47,120,224,.2),transparent 70%);pointer-events:none}
+  .hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:42px;align-items:center;padding:58px 0 68px}
+  .hero h1{font-size:clamp(33px,4.8vw,53px);color:#fff;font-weight:800;margin-top:18px;letter-spacing:-.025em;max-width:17ch}
+  .hero h1 em{font-style:normal;color:var(--blue-l)}
+  .hero .lede{margin-top:20px;color:#c3d2e6;font-size:clamp(16px,1.6vw,18.5px);max-width:52ch}
+  .hero .cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .hero .micro{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
+  .hero .micro span{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:#c3d2e6;background:rgba(255,255,255,.05);border:1px solid var(--line-d);border-radius:999px;padding:6px 13px}
+  .hero .micro span i{width:6px;height:6px;border-radius:50%;background:var(--blue-l);flex:none}
+
+  /* course/CPD mockup */
+  .mock{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));border:1px solid var(--line-d);border-radius:20px;padding:20px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+  .mock .mtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+  .mock .mtop .ttl{font-family:var(--mono);font-size:11px;color:var(--muted-d);letter-spacing:.5px}
+  .mock .mtop .cpd{font-family:var(--disp);font-weight:700;font-size:10.5px;color:#9fc2ff;background:rgba(47,120,224,.16);border:1px solid rgba(47,120,224,.35);border-radius:999px;padding:4px 10px}
+  .crow{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.05);border:1px solid var(--line-d);border-radius:12px;padding:12px 14px;margin-bottom:9px}
+  .crow .ci{width:34px;height:34px;border-radius:9px;background:rgba(47,120,224,.16);color:var(--blue-l);display:flex;align-items:center;justify-content:center;font-size:16px;flex:none}
+  .crow .cn{font-family:var(--disp);font-weight:600;color:#fff;font-size:13px}
+  .crow .cs{font-size:11px;color:var(--muted-d);margin-top:2px}
+  .crow .pct{margin-left:auto;text-align:right}
+  .crow .pct b{font-family:var(--disp);font-weight:800;color:#fff;font-size:14px}
+  .crow .pbar{width:70px;height:5px;border-radius:4px;background:rgba(255,255,255,.12);margin-top:5px;overflow:hidden}
+  .crow .pbar i{display:block;height:100%;background:var(--blue-l);border-radius:4px}
+
+  section{padding:74px 0}
+  .sec-eye{display:flex;align-items:center;gap:12px}.sec-eye:before{content:"";width:30px;height:1.5px;background:var(--blue)}
+  .sec-head{max-width:66ch}.sec-head h2{font-size:clamp(26px,3.5vw,40px);margin:14px 0 0}
+  .sec-head p.sub{margin-top:15px;color:var(--muted);max-width:64ch;font-size:16.5px}
+  .sec-head .eyebrow{color:var(--blue-d)}
+
+  .areas{background:var(--card)}
+  .achips{display:flex;flex-wrap:wrap;gap:9px;margin-top:32px}
+  .achips span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:13px;color:var(--text);font-weight:500}
+
+  .how{background:var(--bg);color:#fff}
+  .steps{display:grid;grid-template-columns:1fr;gap:14px;margin-top:38px}
+  .stepc{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line-d);border-radius:16px;padding:24px}
+  .stepc .ic{width:46px;height:46px;border-radius:13px;background:rgba(47,120,224,.16);color:var(--blue-l);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .stepc h3{color:#fff;font-size:17px;margin-top:16px}.stepc p{font-size:13.5px;color:var(--muted-d);margin-top:8px}
+
+  .who{background:var(--paper)}
+  .whochips{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+  .whochips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:13px;color:var(--text);font-weight:500}
+  .whyband{margin-top:30px;background:linear-gradient(135deg,var(--panel),var(--bg-2));border:1px solid var(--line-d);border-radius:18px;padding:28px;color:#fff}
+  .whyband h3{color:#fff;font-size:20px}.whyband p{color:var(--muted-d);margin-top:10px;font-size:15px}
+
+  .pricing{background:var(--card)}
+  .prgrid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+  .prcard{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}
+  .prcard.feat{border-color:var(--blue);box-shadow:0 24px 50px -30px rgba(47,120,224,.45)}
+  .prcard .tag{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--blue-d)}
+  .prcard h3{font-size:18px;margin-top:8px}
+  .prcard .price{font-family:var(--disp);font-weight:800;font-size:25px;color:var(--ink);margin-top:14px;line-height:1}
+  .prcard .price small{font-size:13px;color:var(--muted);font-weight:500}
+  .prcard p{font-size:13px;color:var(--muted);margin-top:10px}
+  .prcard .act{margin-top:auto;padding-top:18px}
+  .prnote{margin-top:18px;font-size:12.5px;color:var(--muted-2);text-align:center}
+
+  .extended{background:var(--bg);color:#fff}.extended .sec-head h2{color:#fff}.extended .sec-head p.sub{color:var(--muted-d)}
+  .extwrap{margin-top:36px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line-d);border-radius:20px;overflow:hidden}
+  .extblock{padding:30px 32px;border-bottom:1px solid var(--line-d)}.extblock:last-child{border-bottom:0}
+  .extblock .sl{font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue-l);margin-bottom:12px}
+  .extblock h3{font-size:21px;margin-bottom:10px;color:#fff}
+  .extblock p{font-size:15px;color:#cdd9e8;margin-bottom:12px}.extblock p:last-child{margin-bottom:0}
+  .extblock ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+  .extblock ul li{display:flex;gap:10px;font-size:14.5px;color:var(--muted-d)}.extblock ul li .tk{color:var(--blue-l);font-weight:700;flex:none}
+  .fintbl{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  .fintbl td{padding:9px 4px;border-bottom:1px solid var(--line-d);color:#cdd9e8}
+  .fintbl td:last-child{text-align:right;font-family:var(--disp);font-weight:700;color:#fff}
+  .fintbl tr:last-child td{border-bottom:0}.fintbl td .pos{color:var(--emerald)}
+  .extdisc{margin-top:14px;font-size:12px;color:#e7ad5b;background:rgba(214,137,42,.12);border:1px solid rgba(214,137,42,.3);border-radius:8px;padding:11px 13px;line-height:1.55}
+
+  .final{background:radial-gradient(120% 130% at 12% -20%,var(--panel) 0%,var(--bg) 70%);text-align:center;color:#fff}
+  .final h2{color:#fff;font-size:clamp(28px,4vw,44px);max-width:20ch;margin:14px auto 0}
+  .final p{color:#c3d2e6;margin:16px auto 0;max-width:54ch}
+  .final .cta{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .final .det{margin-top:26px;font-size:13.5px;color:var(--muted-d);line-height:1.8}
+
+  footer{background:var(--bg);color:var(--muted-d);border-top:1px solid var(--line-d)}
+  footer .ftop{display:grid;grid-template-columns:1fr;gap:24px;padding:42px 0 14px}
+  footer h4{color:#fff;font-size:14px;font-family:var(--disp);font-weight:700;margin-bottom:12px}
+  footer a{color:var(--muted-d);font-size:14px;display:block;margin-bottom:7px}footer a:hover{color:var(--blue-l)}
+  footer .disc{border-top:1px solid var(--line-d);padding:18px 0 40px;font-size:11.5px;color:var(--muted-2);line-height:1.7;max-width:92ch}
+
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+
+  @media (min-width:760px){
+    .navlinks{display:flex}
+    .hero-in{grid-template-columns:1.02fr .98fr;padding:72px 0 82px}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .prgrid{grid-template-columns:repeat(4,1fr)}
+    footer .ftop{grid-template-columns:2fr 1fr 1fr}
+  }
+  @media (min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+  @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap row">
+  <a class="brand" href="#top"><span class="mk">LSN</span><span><b>London Safeguarding Network</b><span>Safeguarding &amp; care training</span></span></a>
+  <div class="navlinks">
+    <a href="#areas">Training areas</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#briefing">Full briefing</a>
+  </div>
+  <div class="navcta"><a class="btn btn-bl btn-sm" href="#contact">Book training</a></div>
+</div></nav>
+
+<main id="top">
+  <header class="hero"><div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">Specialist safeguarding &amp; care training platform</span>
+      <h1>Training that holds up <em>to real practice &mdash; and to inspection.</em></h1>
+      <p class="lede">Online and in-person safeguarding and care training for children's homes, adult care, supported accommodation, foster carers and schools. Practical, sector-specific, credible &mdash; with CPD evidence built in.</p>
+      <div class="cta">
+        <a class="btn btn-bl" href="#contact">Book training</a>
+        <a class="btn btn-ghost-d" href="#areas">See the courses</a>
+      </div>
+      <div class="micro">
+        <span><i></i>Online &amp; in person</span>
+        <span><i></i>CPD evidence built in</span>
+        <span><i></i>Children's &amp; adult services</span>
+      </div>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="mtop"><span class="ttl">Provider &middot; team training record</span><span class="cpd">CPD evidenced</span></div>
+      <div class="crow"><span class="ci">&#128737;</span><div><div class="cn">Safeguarding &amp; child protection</div><div class="cs">12 of 14 staff complete</div></div><div class="pct"><b>86%</b><div class="pbar"><i style="width:86%"></i></div></div></div>
+      <div class="crow"><span class="ci">&#129504;</span><div><div class="cn">Trauma-informed practice</div><div class="cs">9 of 14 staff complete</div></div><div class="pct"><b>64%</b><div class="pbar"><i style="width:64%"></i></div></div></div>
+      <div class="crow"><span class="ci">&#9995;</span><div><div class="cn">De-escalation &amp; restraint awareness</div><div class="cs">14 of 14 staff complete</div></div><div class="pct"><b>100%</b><div class="pbar"><i style="width:100%"></i></div></div></div>
+    </div>
+  </div></header>
+
+  <section id="areas" class="areas"><div class="wrap">
+    <div class="sec-head"><span class="sec-eye"><span class="eyebrow">Training areas</span></span><h2>Real practice, real risk, real responsibility.</h2><p class="sub">Not dry, box-ticking training &mdash; training that helps staff understand real behaviour, real risk and real professional responsibility, across safeguarding, therapeutic practice and regulatory awareness.</p></div>
+    <div class="achips">
+      <span>Safeguarding</span><span>Child protection</span><span>Exploitation</span><span>Missing from care</span><span>Adverse childhood experiences</span><span>Trauma-informed practice</span><span>Therapeutic care</span><span>De-escalation</span><span>Restraint awareness</span><span>Anti-ligature awareness</span><span>Safer recruitment</span><span>Professional boundaries</span><span>Leadership</span><span>Quality assurance</span><span>First aid</span><span>Fire safety</span><span>Care compliance</span>
+    </div>
+  </div></section>
+
+  <section id="how" class="how"><div class="wrap">
+    <div class="sec-head"><span class="sec-eye"><span class="eyebrow">How it works</span></span><h2>Flexible delivery, evidenced learning.</h2><p class="sub">Buy what suits your service &mdash; individual courses, full provider packages, annual licences, blended learning or in-person days &mdash; and evidence it all.</p></div>
+    <div class="steps">
+      <div class="stepc"><div class="ic">&#128187;</div><h3>Online or in person</h3><p>Access online courses through the platform, or book in-person training delivered by experienced trainers.</p></div>
+      <div class="stepc"><div class="ic">&#127890;</div><h3>Buy what fits</h3><p>Individual courses, provider packages, annual licences, blended packages or in-person days.</p></div>
+      <div class="stepc"><div class="ic">&#128202;</div><h3>Track progress</h3><p>The platform tracks progress, completion, assessment outcomes and downloadable resources.</p></div>
+      <div class="stepc"><div class="ic">&#128196;</div><h3>Evidence it</h3><p>A clear record of what staff completed &mdash; ready for inspection and internal QA.</p></div>
+    </div>
+  </div></section>
+
+  <section id="who" class="who"><div class="wrap">
+    <div class="sec-head"><span class="sec-eye"><span class="eyebrow">Who it's for</span></span><h2>For services working with vulnerable people.</h2></div>
+    <div class="whochips">
+      <span>Children's homes</span><span>Adult social care providers</span><span>Supported accommodation</span><span>Foster carers</span><span>Support workers</span><span>Registered Managers</span><span>Responsible Individuals</span><span>Care agencies</span><span>Schools</span><span>Safeguarding leads</span><span>Training providers</span><span>Staff teams</span>
+    </div>
+    <div class="whyband">
+      <h3>Why providers choose it</h3>
+      <p>Training isn't optional in care. Staff need to understand safeguarding, risk, behaviour, professional boundaries and their legal responsibilities &mdash; and inspection expectations are rising while workforce turnover stays a challenge. Poor training creates risk: weak staff knowledge affects safeguarding, behaviour management, recording, incident response and inspection outcomes. London Safeguarding Network gives providers training that is practical, sector-specific, relevant to the real challenges staff face &mdash; and evidenced, repeatable and linked to actual practice.</p>
+    </div>
+  </div></section>
+
+  <section id="pricing" class="pricing"><div class="wrap">
+    <div class="sec-head"><span class="sec-eye"><span class="eyebrow">Pricing</span></span><h2>From a single course to a whole-provider licence.</h2><p class="sub">Indicative pricing &mdash; get in touch for the right package for your service.</p></div>
+    <div class="prgrid">
+      <div class="prcard"><span class="tag">Individual</span><h3>Online courses</h3><div class="price">&pound;39&ndash;&pound;199</div><p>Individual online courses across safeguarding and care practice.</p><div class="act"><a class="btn btn-light btn-sm" href="#contact" style="width:100%;justify-content:center">Browse</a></div></div>
+      <div class="prcard feat"><span class="tag">Provider</span><h3>Provider package</h3><div class="price">&pound;1,500&ndash;&pound;7,500</div><p>A full training package for your whole staff team.</p><div class="act"><a class="btn btn-bl btn-sm" href="#contact" style="width:100%;justify-content:center">Enquire</a></div></div>
+      <div class="prcard"><span class="tag">Annual</span><h3>Annual licence</h3><div class="price">&pound;2,500&ndash;&pound;12,000</div><p>Year-round access and training for your provider.</p><div class="act"><a class="btn btn-light btn-sm" href="#contact" style="width:100%;justify-content:center">Enquire</a></div></div>
+      <div class="prcard"><span class="tag">In person &amp; blended</span><h3>In-person &amp; blended</h3><div class="price">Bespoke</div><p>In-person days (per day or participant), blended and accredited packages.</p><div class="act"><a class="btn btn-light btn-sm" href="#contact" style="width:100%;justify-content:center">Talk to us</a></div></div>
+    </div>
+    <p class="prnote">Indicative pricing for guidance. Training &amp; compliance bundles also available. Final pricing confirmed on enquiry.</p>
+  </div></section>
+
+  <section id="briefing" class="extended"><div class="wrap">
+    <div class="sec-head"><span class="sec-eye"><span class="eyebrow">Full briefing</span></span><h2>The extended treatment.</h2><p class="sub">The complete picture for partners and investors &mdash; what it is, why it matters, and the commercial case.</p></div>
+    <div class="extwrap">
+      <div class="extblock">
+        <div class="sl">What it is</div>
+        <h3>A specialist safeguarding and care training platform</h3>
+        <p>London Safeguarding Network provides online and in-person training for children's homes, adult care services, supported accommodation, foster carers, support workers, managers, schools, care agencies and regulated providers. It's built for services that need clear, practical, credible training that can be evidenced during inspection, supervision, quality assurance and workforce development.</p>
+        <p>The platform combines safeguarding knowledge, therapeutic practice, care-sector realism, digital learning, downloadable resources, video teaching and provider-level training packages &mdash; not a dry course library, but training built around real risk, real practice and real inspection expectations.</p>
+      </div>
+      <div class="extblock">
+        <div class="sl">Why it is investable</div>
+        <h3>A regulation-led market with constant demand</h3>
+        <p>Care providers need ongoing training for new staff, existing staff, managers and specialist roles &mdash; and evidence that training has taken place and connects to safer practice.</p>
+        <ul>
+          <li><span class="tk">&#10003;</span>Recurring training demand with provider-package and annual-licence potential</li>
+          <li><span class="tk">&#10003;</span>Both in-person and online delivery routes</li>
+          <li><span class="tk">&#10003;</span>Sells to children's and adult services; supports inspection evidence</li>
+          <li><span class="tk">&#10003;</span>Links directly to CareIQ, Inspector Coach AI and the Restraint Toolkit</li>
+          <li><span class="tk">&#10003;</span>Founder has direct care-sector credibility and training experience</li>
+        </ul>
+      </div>
+      <div class="extblock">
+        <div class="sl">Commercial opportunity</div>
+        <h3>The planning model</h3>
+        <p>Revenue can come from individual course sales, provider training packages, annual licences, in-person training days, blended learning packages and specialist safeguarding programmes. The Year&nbsp;1 planning model below is built bottom-up from those routes.</p>
+        <table class="fintbl">
+          <tr><td>Investment range</td><td>&pound;60,000&ndash;&pound;150,000</td></tr>
+          <tr><td>Projected Year 1 revenue</td><td>&pound;226,800</td></tr>
+          <tr><td>Estimated Year 1 costs</td><td>&pound;110,000&ndash;&pound;150,000</td></tr>
+          <tr><td>Projected Year 1 net profit</td><td><span class="pos">&pound;76,000&ndash;&pound;116,000</span></td></tr>
+          <tr><td>Projected Year 2 revenue</td><td>&pound;450,000&ndash;&pound;800,000</td></tr>
+          <tr><td>Projected Year 2 net profit</td><td><span class="pos">&pound;220,000&ndash;&pound;420,000</span></td></tr>
+        </table>
+        <div class="extdisc">These figures are planning projections only and depend on course sales, provider contracts, licensing uptake, trainer delivery capacity, accreditation costs, marketing performance and learner retention.</div>
+      </div>
+      <div class="extblock">
+        <div class="sl">Investment, partnership &amp; licensing</div>
+        <h3>How to get involved</h3>
+        <p>London Safeguarding Network is open to investment, partnership and licensing. Investment could support course production, LMS development, accreditation, video filming, content editing, marketing, trainer recruitment and platform improvement.</p>
+        <p>Partnership opportunities include care providers, schools, fostering organisations, recruitment agencies, local authorities, training providers and safeguarding professionals. Licensing could allow providers or training companies to use LSN courses, resources and packages under licence &mdash; and the platform can grow as both a training provider and a safeguarding knowledge platform.</p>
+      </div>
+      <div class="extblock">
+        <div class="sl">Core message</div>
+        <h3>Practical safeguarding and care training for real care settings</h3>
+        <p>It helps providers train staff, evidence learning, improve practice and prepare for regulatory scrutiny. It is not just an online course library &mdash; it is a specialist safeguarding and care training platform built around real risk, real practice and real inspection expectations.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="contact" class="final" style="padding:0"><div class="wrap" style="padding:82px 0">
+    <span class="eyebrow">Get started</span>
+    <h2>Train your team. Evidence the learning.</h2>
+    <p>Book training, or talk to us about a provider package or annual licence for your whole service.</p>
+    <div class="cta">
+      <a class="btn btn-bl" href="mailto:des@webbcareconsultancy.com?subject=London%20Safeguarding%20Network%20-%20training%20enquiry&amp;body=Hi%2C%20I'd%20like%20to%20talk%20about%20training.%0A%0AService%20type%3A%20%0ANumber%20of%20staff%3A%20%0AOnline%2C%20in-person%20or%20both%3F%20">Book training</a>
+      <a class="btn btn-ghost-d" href="tel:02046180163">Call 020 4618 0163</a>
+    </div>
+    <p class="det"><b style="color:#fff">London Safeguarding Network</b><br>A Webb Care Consultancy brand<br>des@webbcareconsultancy.com &middot; 020 4618 0163</p>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="ftop">
+    <div>
+      <a class="brand" href="#top" style="display:inline-flex;margin-bottom:14px"><span class="mk">LSN</span><span><b>London Safeguarding Network</b><span>Safeguarding &amp; care training</span></span></a>
+      <p style="color:var(--muted-d);font-size:14px;max-width:46ch">Practical safeguarding and care training for real care settings &mdash; online and in person, with CPD evidence built in.</p>
+    </div>
+    <div><h4>Training</h4><a href="#areas">Training areas</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#briefing">Full briefing</a></div>
+    <div><h4>Contact</h4><a href="mailto:des@webbcareconsultancy.com">des@webbcareconsultancy.com</a><a href="tel:02046180163">020 4618 0163</a><a href="#contact">Book training</a></div>
+  </div>
+  <div class="disc">London Safeguarding Network is a Webb Care Consultancy brand. Training supports safer practice and provides CPD evidence; it does not replace your statutory safeguarding duties, local procedures or professional judgement. Always follow your local safeguarding arrangements and current statutory guidance. Figures shown are planning projections for discussion only and are not guaranteed. &copy; 2026 Webb Care Consultancy.</div>
+</div></footer>
+</body>
+</html>
