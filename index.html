@@ -51,6 +51,35 @@
   .reveal.open{max-height:600px}
   .reveal p{padding-top:12px;color:var(--text);font-size:14.5px;line-height:1.6}
 
+  /* Popular Training */
+  .popular{background:var(--paper)}
+  .course-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:34px}
+  .course{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px}
+  .course h3{font-size:17px;letter-spacing:-.005em}
+  .course .cshort{color:var(--muted);font-size:14px;line-height:1.55}
+  .course .cmeta{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+  .course .cmeta li{display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:13px;color:var(--text);align-items:baseline}
+  .course .cmeta .k{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+  .course .cprice{font-family:var(--disp);font-weight:800;color:var(--ink);font-size:15px;margin-top:auto;padding-top:6px}
+  .course .cbtns{display:flex;gap:8px;flex-wrap:wrap}
+  .cta-line{margin-top:32px;display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+
+  /* Solutions (dark) */
+  .solutions{background:var(--bg);color:#fff}
+  .sol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:34px}
+  .sol{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line-d);border-radius:16px;padding:24px;color:#fff}
+  .sol h3{color:#fff;font-size:17px}
+  .sol p{color:var(--muted-d);margin-top:8px;font-size:14.5px;line-height:1.55}
+  .sol-n{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--blue-l);margin-bottom:10px}
+
+  /* Pathways */
+  .pathways{background:var(--card)}
+  .pw-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:34px}
+  .pw{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px}
+  .pw h3{font-size:17px;letter-spacing:-.005em}
+  .pw p{color:var(--muted);font-size:14.5px;line-height:1.55;flex:1}
+  .pw-btns{display:flex;flex-wrap:wrap;gap:8px}
+
   /* Areas (existing) */
   .areas{background:var(--card)}
   .achips{display:flex;flex-wrap:wrap;gap:9px;margin-top:32px}
@@ -85,7 +114,7 @@
   .prcard .act{margin-top:auto;padding-top:18px}
   .prnote{margin-top:18px;font-size:12.5px;color:var(--muted-2);text-align:center}
 
-  /* About (dark, trimmed briefing) */
+  /* About (dark) */
   .about{background:var(--bg);color:#fff}
   .extwrap{margin-top:36px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line-d);border-radius:20px;overflow:hidden}
   .extblock{padding:30px 32px;border-bottom:1px solid var(--line-d)}
@@ -95,28 +124,52 @@
   .extblock p{font-size:15px;color:#cdd9e8;margin-bottom:12px}
   .extblock p:last-child{margin-bottom:0}
 
-  /* Final */
-  .final{background:radial-gradient(120% 130% at 12% -20%,var(--panel) 0%,var(--bg) 70%);text-align:center;color:#fff}
-  .final h2{color:#fff;font-size:clamp(28px,4vw,44px);max-width:20ch;margin:14px auto 0}
-  .final p{color:#c3d2e6;margin:16px auto 0;max-width:54ch}
-  .final .cta{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .final .det{margin-top:26px;font-size:13.5px;color:var(--muted-d);line-height:1.8}
+  /* Contact (dark, replaces old .final) */
+  .contact{background:radial-gradient(120% 130% at 12% -20%,var(--panel) 0%,var(--bg) 70%);color:#fff}
+  .contact-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .contact .det{margin-top:36px;padding-top:24px;border-top:1px solid var(--line-d);font-size:13.5px;color:var(--muted-d);line-height:1.8}
+
+  /* Enquiry form */
+  .enq{position:relative;margin-top:36px;background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:18px;padding:26px;display:grid;grid-template-columns:1fr;gap:14px}
+  .enq .hp{position:absolute;left:-9999px;top:-9999px}
+  .enq .fg{display:flex;flex-direction:column;gap:6px}
+  .enq .fg.full{grid-column:1 / -1}
+  .enq label{font-family:var(--disp);font-weight:600;font-size:13px;color:#dbe4ee;letter-spacing:.01em}
+  .enq .req{color:var(--amber);margin-left:4px}
+  .enq input,.enq select,.enq textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:10px;padding:11px 14px;color:#fff;font-family:var(--body);font-size:15px;transition:border-color .15s,background .15s}
+  .enq input:focus,.enq select:focus,.enq textarea:focus{outline:none;border-color:var(--blue-l);background:rgba(255,255,255,.06)}
+  .enq textarea{resize:vertical;min-height:80px}
+  .enq select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,#c3d2e6 50%),linear-gradient(135deg,#c3d2e6 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:36px}
+  .enq select option{background:var(--bg);color:#fff}
+  .enq button[type=submit]{align-self:flex-start;margin-top:6px}
+
+  /* Sticky CTA */
+  .stickycta{position:fixed;bottom:16px;right:16px;z-index:60;background:var(--blue);color:#fff;border-radius:999px;padding:12px 18px;font-family:var(--disp);font-weight:700;font-size:14px;text-decoration:none;box-shadow:0 14px 30px -6px rgba(11,29,58,.55);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s,background .15s;display:inline-flex;align-items:center;gap:8px;border:1.5px solid transparent}
+  .stickycta.on{opacity:1;visibility:visible;transform:none}
+  .stickycta:hover{background:var(--blue-d)}
+  .stickycta:after{content:"→";font-size:15px}
 
   @media (min-width:760px){
     .sc-grid{grid-template-columns:repeat(2,1fr);gap:16px}
     .why-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+    .course-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+    .pw-grid{grid-template-columns:repeat(2,1fr);gap:16px}
     .steps{grid-template-columns:repeat(2,1fr)}
     .prgrid{grid-template-columns:repeat(4,1fr)}
+    .enq{grid-template-columns:1fr 1fr;gap:16px}
   }
   @media (min-width:1040px){
     .sc-grid{grid-template-columns:repeat(3,1fr)}
     .why-grid{grid-template-columns:repeat(3,1fr)}
+    .course-grid{grid-template-columns:repeat(3,1fr)}
+    .pw-grid{grid-template-columns:repeat(3,1fr)}
     .steps{grid-template-columns:repeat(4,1fr)}
   }
   @media (prefers-reduced-motion:reduce){
     .reveal{transition:none}
     .sc{transition:none}
     .sc:hover{transform:none}
+    .stickycta{transition:none}
   }
 </style>
 </head>
@@ -135,7 +188,7 @@
   <header class="hero"><div class="wrap hero-in">
     <span class="eyebrow">Specialist training for people who care for others</span>
     <h1>Training built around the <em>realities of care</em>.</h1>
-    <p class="lede">Practical, sector-specific training for children's homes, supported accommodation, adult social care and specialist care services. From safeguarding and trauma-informed practice to leadership, behaviour support and physical intervention, we help care organisations develop safer, more confident and better-prepared teams.</p>
+    <p class="lede">Practical, sector-specific training for children&rsquo;s homes, supported accommodation, adult social care and specialist care services. From safeguarding and trauma-informed practice to leadership, behaviour support and physical intervention, we help care organisations develop safer, more confident and better-prepared teams.</p>
     <div class="cta">
       <a class="btn btn-bl" href="#areas">Explore training</a>
       <a class="btn btn-ghost-d" href="#pricing">Build a training package</a>
@@ -159,7 +212,7 @@
     <div class="sc-grid">
       <a class="sc" href="#">
         <div class="sc-ic" aria-hidden="true">&#127968;</div>
-        <h3>Children's homes</h3>
+        <h3>Children&rsquo;s homes</h3>
         <p>Safeguarding, therapeutic care, behaviour support, leadership, compliance and specialist physical intervention training for residential childcare teams.</p>
         <span class="sc-more">Explore</span>
       </a>
@@ -242,6 +295,167 @@
     </div>
   </div></section>
 
+  <section id="popular" class="popular"><div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eye"><span class="eyebrow">Popular training</span></span>
+      <h2>Popular training for care services.</h2>
+      <p class="sub">A selection of our flagship courses &mdash; delivered online, in person or blended, and available for individual staff or full teams.</p>
+    </div>
+    <div class="course-grid" id="popular-grid">
+      <article class="course">
+        <h3>Physical Intervention &mdash; Level 3 Practitioner Programme</h3>
+        <p class="cshort">Practical physical intervention training built around real-world care settings &mdash; prevention, de-escalation, legal responsibilities and safer intervention skills.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Children&rsquo;s homes, secure and specialist care settings</span></li>
+          <li><span class="k">Delivery</span><span>In-person</span></li>
+          <li><span class="k">Duration</span><span>3 days (approx.)</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+      <article class="course">
+        <h3>Safeguarding Children</h3>
+        <p class="cshort">Core safeguarding training for people working with children and young people &mdash; recognising risk, thresholds, referral pathways and professional responsibility.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Children&rsquo;s homes, foster carers, schools, youth-facing services</span></li>
+          <li><span class="k">Delivery</span><span>Online or in-person</span></li>
+          <li><span class="k">Duration</span><span>Approx. 3&ndash;4 hours online &middot; 1 day in-person</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+      <article class="course">
+        <h3>Adult Safeguarding</h3>
+        <p class="cshort">Safeguarding training for adult social care &mdash; recognising abuse and neglect, Mental Capacity Act awareness, DoLS overview and safer practice.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Adult social care, supported living, care agencies</span></li>
+          <li><span class="k">Delivery</span><span>Online or in-person</span></li>
+          <li><span class="k">Duration</span><span>Approx. 3&ndash;4 hours online &middot; 1 day in-person</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+      <article class="course">
+        <h3>Trauma-Informed Care</h3>
+        <p class="cshort">Understand how trauma, previous experiences and unmet needs can influence behaviour &mdash; and how staff can respond with more thoughtful, effective care.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Residential childcare, therapeutic services, foster carers, care teams</span></li>
+          <li><span class="k">Delivery</span><span>Online or in-person</span></li>
+          <li><span class="k">Duration</span><span>Approx. 4 hours online &middot; 1 day in-person</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+      <article class="course">
+        <h3>Positive Behaviour Support</h3>
+        <p class="cshort">Person-centred approaches to understanding behaviour, communication, individual needs and least restrictive practice.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Supported living, learning disability services, adult social care</span></li>
+          <li><span class="k">Delivery</span><span>Online or in-person</span></li>
+          <li><span class="k">Duration</span><span>Approx. 4&ndash;6 hours online &middot; 1&ndash;2 days in-person</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+      <article class="course">
+        <h3>Registered Manager &amp; Leadership Development</h3>
+        <p class="cshort">Advanced professional development for people leading regulated care services &mdash; safeguarding oversight, workforce, quality assurance and inspection readiness.</p>
+        <ul class="cmeta">
+          <li><span class="k">Who it&rsquo;s for</span><span>Registered Managers, Deputy Managers, Responsible Individuals</span></li>
+          <li><span class="k">Delivery</span><span>Blended (online + in-person)</span></li>
+          <li><span class="k">Duration</span><span>Programme delivered across multiple sessions</span></li>
+          <li><span class="k">CPD</span><span>CPD-evidenced</span></li>
+        </ul>
+        <div class="cprice">Team pricing available</div>
+        <div class="cbtns">
+          <a class="btn btn-bl btn-sm" href="#">View course</a>
+          <a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>
+        </div>
+      </article>
+    </div>
+    <div class="cta-line">
+      <a class="btn btn-light" href="#">View all training</a>
+    </div>
+  </div></section>
+
+  <section id="solutions" class="solutions"><div class="wrap">
+    <div class="sec-head sec-head--dark">
+      <span class="sec-eye"><span class="eyebrow">One provider. One training solution.</span></span>
+      <h2>Five ways to work with us.</h2>
+      <p class="sub">From a single course to an ongoing partnership &mdash; choose the model that fits your service.</p>
+    </div>
+    <div class="sol-grid">
+      <div class="sol"><div class="sol-n">01</div><h3>Individual courses</h3><p>Purchase specialist training for individual staff members.</p></div>
+      <div class="sol"><div class="sol-n">02</div><h3>Team training</h3><p>Book training for complete teams or groups of employees.</p></div>
+      <div class="sol"><div class="sol-n">03</div><h3>Organisation packages</h3><p>Build a structured training package around the needs of your entire service.</p></div>
+      <div class="sol"><div class="sol-n">04</div><h3>Blended programmes</h3><p>Combine flexible online theory with instructor-led practical training.</p></div>
+      <div class="sol"><div class="sol-n">05</div><h3>Annual training partnerships</h3><p>Develop an ongoing training relationship covering workforce development throughout the year.</p></div>
+    </div>
+    <div class="cta-line">
+      <a class="btn btn-bl" href="#enquiry-form">Build my organisation&rsquo;s training package</a>
+    </div>
+  </div></section>
+
+  <section id="pathways" class="pathways"><div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eye"><span class="eyebrow">Training pathways</span></span>
+      <h2>More than courses. Build a development pathway.</h2>
+      <p class="sub">Structured programmes that develop practitioners from foundation knowledge to advanced professional practice.</p>
+    </div>
+    <div class="pw-grid">
+      <article class="pw">
+        <h3>New children&rsquo;s home staff pathway</h3>
+        <p>Essential learning for practitioners entering residential childcare.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+      <article class="pw">
+        <h3>Senior &amp; deputy manager pathway</h3>
+        <p>Developing leadership, safeguarding oversight, staff management and professional decision-making.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+      <article class="pw">
+        <h3>Registered Manager development pathway</h3>
+        <p>Advanced professional development for people leading regulated care services.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+      <article class="pw">
+        <h3>Therapeutic practice pathway</h3>
+        <p>Trauma, attachment, emotional safety, co-regulation and behaviour support.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+      <article class="pw">
+        <h3>Safeguarding practitioner pathway</h3>
+        <p>Progressive safeguarding development from foundation knowledge to advanced professional practice.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+      <article class="pw">
+        <h3>Safer intervention pathway</h3>
+        <p>Prevention, de-escalation, legal responsibilities, risk awareness and practical physical intervention skills.</p>
+        <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
+      </article>
+    </div>
+  </div></section>
+
   <section id="areas" class="areas"><div class="wrap">
     <div class="sec-head"><span class="sec-eye"><span class="eyebrow">Training areas</span></span><h2>Real practice, real risk, real responsibility.</h2><p class="sub">Not dry, box-ticking training &mdash; training that helps staff understand real behaviour, real risk and real professional responsibility, across safeguarding, therapeutic practice and regulatory awareness.</p></div>
     <div class="achips">
@@ -298,14 +512,30 @@
     </div>
   </div></section>
 
-  <section id="contact" class="final" style="padding:0"><div class="wrap" style="padding:82px 0">
-    <span class="eyebrow">Get started</span>
-    <h2>Train your team. Evidence the learning.</h2>
-    <p>Book training, or talk to us about a provider package or annual licence for your whole service.</p>
-    <div class="cta">
-      <a class="btn btn-bl" href="mailto:des@webbcareconsultancy.com?subject=London%20Safeguarding%20Network%20-%20training%20enquiry&amp;body=Hi%2C%20I%27d%20like%20to%20talk%20about%20training.%0A%0AService%20type%3A%20%0ANumber%20of%20staff%3A%20%0AOnline%2C%20in-person%20or%20both%3F%20">Book training</a>
-      <a class="btn btn-ghost-d" href="tel:02046180163">Call 020 4618 0163</a>
+  <section id="contact" class="contact"><div class="wrap">
+    <div class="sec-head sec-head--dark">
+      <span class="sec-eye"><span class="eyebrow">Get in touch</span></span>
+      <h2>Tell us what your service needs.</h2>
+      <p class="sub">Whether you need one specialist course or training across your entire organisation, we can help you build a programme around your staff, your service and the people you support.</p>
     </div>
+    <div class="contact-cta">
+      <a class="btn btn-bl" href="#enquiry-form">Build my training package</a>
+      <a class="btn btn-ghost-d" href="#">Explore all courses</a>
+      <a class="btn btn-ghost-d" href="tel:02046180163">Speak to the training team</a>
+    </div>
+    <form name="training-enquiry" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" id="enquiry-form" class="enq">
+      <input type="hidden" name="form-name" value="training-enquiry">
+      <div class="hp" aria-hidden="true"><label>Please leave blank if you are human: <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></div>
+      <div class="fg"><label for="f-org">Organisation</label><input id="f-org" type="text" name="organisation" autocomplete="organization"></div>
+      <div class="fg"><label for="f-name">Your name</label><input id="f-name" type="text" name="name" autocomplete="name"></div>
+      <div class="fg"><label for="f-email">Email <span class="req">*</span></label><input id="f-email" type="email" name="email" required autocomplete="email"></div>
+      <div class="fg"><label for="f-tel">Telephone</label><input id="f-tel" type="tel" name="telephone" autocomplete="tel"></div>
+      <div class="fg"><label for="f-svc">Type of service</label><select id="f-svc" name="service-type"><option value="">Select&hellip;</option><option>Children&rsquo;s home</option><option>Supported accommodation</option><option>Adult social care</option><option>Supported living &amp; learning disabilities</option><option>Mental health &amp; complex care</option><option>Other</option></select></div>
+      <div class="fg"><label for="f-staff">Number of staff</label><input id="f-staff" type="text" name="staff-count"></div>
+      <div class="fg full"><label for="f-req">Training required</label><textarea id="f-req" name="training-required" rows="4"></textarea></div>
+      <div class="fg full"><label for="f-notes">Anything else we should know?</label><textarea id="f-notes" name="notes" rows="3"></textarea></div>
+      <div class="fg full"><button type="submit" class="btn btn-bl">Send enquiry</button></div>
+    </form>
     <p class="det"><b style="color:#fff">London Safeguarding Network</b><br>A Webb Care Consultancy brand<br>des@webbcareconsultancy.com &middot; 020 4618 0163</p>
   </div></section>
 
@@ -322,6 +552,8 @@
   </div>
   <div class="disc">London Safeguarding Network is a Webb Care Consultancy brand. Training supports safer practice and provides CPD evidence; it does not replace your statutory safeguarding duties, local procedures or professional judgement. Always follow your local safeguarding arrangements and current statutory guidance. &copy; 2026 Webb Care Consultancy.</div>
 </div></footer>
+
+<a class="stickycta" id="stickycta" href="#enquiry-form" aria-label="Train my team — jump to enquiry form">Train my team</a>
 
 </body>
 </html>

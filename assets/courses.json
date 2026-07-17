@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "slug": "physical-intervention-l3",
+      "title": "Physical Intervention — Level 3 Practitioner Programme",
+      "short": "Practical physical intervention training built around real-world care settings — prevention, de-escalation, legal responsibilities and safer intervention skills.",
+      "whoFor": "Children's homes, secure and specialist care settings",
+      "delivery": "In-person",
+      "duration": "3 days (approx.)",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    },
+    {
+      "slug": "safeguarding-children",
+      "title": "Safeguarding Children",
+      "short": "Core safeguarding training for people working with children and young people — recognising risk, thresholds, referral pathways and professional responsibility.",
+      "whoFor": "Children's homes, foster carers, schools, youth-facing services",
+      "delivery": "Online or in-person",
+      "duration": "Approx. 3–4 hours online · 1 day in-person",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    },
+    {
+      "slug": "adult-safeguarding",
+      "title": "Adult Safeguarding",
+      "short": "Safeguarding training for adult social care — recognising abuse and neglect, Mental Capacity Act awareness, DoLS overview and safer practice.",
+      "whoFor": "Adult social care, supported living, care agencies",
+      "delivery": "Online or in-person",
+      "duration": "Approx. 3–4 hours online · 1 day in-person",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    },
+    {
+      "slug": "trauma-informed-care",
+      "title": "Trauma-Informed Care",
+      "short": "Understand how trauma, previous experiences and unmet needs can influence behaviour — and how staff can respond with more thoughtful, effective care.",
+      "whoFor": "Residential childcare, therapeutic services, foster carers, care teams",
+      "delivery": "Online or in-person",
+      "duration": "Approx. 4 hours online · 1 day in-person",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    },
+    {
+      "slug": "positive-behaviour-support",
+      "title": "Positive Behaviour Support",
+      "short": "Person-centred approaches to understanding behaviour, communication, individual needs and least restrictive practice.",
+      "whoFor": "Supported living, learning disability services, adult social care",
+      "delivery": "Online or in-person",
+      "duration": "Approx. 4–6 hours online · 1–2 days in-person",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    },
+    {
+      "slug": "registered-manager-leadership",
+      "title": "Registered Manager & Leadership Development",
+      "short": "Advanced professional development for people leading regulated care services — safeguarding oversight, workforce, quality assurance and inspection readiness.",
+      "whoFor": "Registered Managers, Deputy Managers, Responsible Individuals",
+      "delivery": "Blended (online + in-person)",
+      "duration": "Programme delivered across multiple sessions",
+      "cpd": "CPD-evidenced",
+      "price": "Team pricing available"
+    }
+  ]
+}
