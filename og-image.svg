@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1e3a"/>
+      <stop offset="1" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f78e0"/>
+      <stop offset="1" stop-color="#1f5fc0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.5">
+      <stop offset="0" stop-color="#2f78e0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2f78e0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="80" width="80" height="80" rx="18" fill="url(#mark)"/>
+  <text x="120" y="132" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-weight="800" font-size="28" fill="#fff">LSN</text>
+  <text x="80" y="290" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-weight="800" font-size="72" fill="#fff">Specialist safeguarding</text>
+  <text x="80" y="370" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-weight="800" font-size="72" fill="#fff">and care training.</text>
+  <text x="80" y="450" font-family="'Segoe UI',Arial,sans-serif" font-weight="500" font-size="26" fill="#c3d2e6">For children&#8217;s homes, adult social care, supported</text>
+  <text x="80" y="488" font-family="'Segoe UI',Arial,sans-serif" font-weight="500" font-size="26" fill="#c3d2e6">accommodation and specialist services.</text>
+  <text x="80" y="570" font-family="'Segoe UI',Arial,sans-serif" font-weight="700" font-size="18" fill="#5fa0ff" letter-spacing="1.5">LONDON SAFEGUARDING NETWORK</text>
+</svg>

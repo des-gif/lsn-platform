@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>London Safeguarding Network | Specialist safeguarding &amp; care training</title>
 <meta name="description" content="London Safeguarding Network delivers specialist safeguarding and care training — online and in person — for children's homes, adult care, supported accommodation, foster carers and schools.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:site_name" content="London Safeguarding Network">
+<meta property="og:type" content="website">
+<meta property="og:title" content="London Safeguarding Network | Specialist safeguarding &amp; care training">
+<meta property="og:description" content="Specialist safeguarding and care training for children's homes, adult social care, supported accommodation and specialist services.">
+<meta property="og:url" content="https://lsn-platform.netlify.app/">
+<meta property="og:image" content="https://lsn-platform.netlify.app/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="London Safeguarding Network | Specialist safeguarding &amp; care training">
+<meta name="twitter:description" content="Specialist safeguarding and care training for children's homes, adult social care, supported accommodation and specialist services.">
+<meta name="twitter:image" content="https://lsn-platform.netlify.app/og-image.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -170,6 +181,34 @@
     .sc{transition:none}
     .sc:hover{transform:none}
     .stickycta{transition:none}
+  }
+
+  /* Dashboard preview (Coming soon mock) */
+  .dashboard-preview{background:var(--paper)}
+  .coming-soon-badge{display:inline-flex;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--amber);background:rgba(214,137,42,.12);border:1px solid rgba(214,137,42,.35);border-radius:999px;padding:5px 11px}
+  .mock-panel{margin-top:34px;background:linear-gradient(180deg,var(--bg-2),var(--bg));border:1px solid var(--line-d);border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(11,29,58,.4);color:#fff}
+  .mock-header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--line-d)}
+  .mock-title{font-family:var(--disp);font-weight:700;color:#fff;font-size:14px;letter-spacing:-.01em}
+  .mock-title small{font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-d);font-weight:500;margin-left:8px}
+  .mock-dots{display:flex;gap:6px}
+  .mock-dots span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.15)}
+  .mock-body{padding:22px}
+  .mock-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .mock-stat{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line-d);border-radius:12px;padding:16px}
+  .mock-stat .n{display:block;font-family:var(--disp);font-weight:800;font-size:32px;color:#fff;line-height:1}
+  .mock-stat .l{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted-d);margin-top:8px}
+  .mock-stat .bar{margin-top:10px;height:5px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}
+  .mock-stat .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue-l),var(--blue));border-radius:3px}
+  .mock-alert{margin-top:16px;display:flex;align-items:center;gap:12px;background:rgba(214,137,42,.1);border:1px solid rgba(214,137,42,.3);border-radius:10px;padding:12px 16px;color:#eec78a;font-size:14px}
+  .mock-alert b{color:#fff}
+  .mock-alert .ic{width:24px;height:24px;border-radius:50%;background:rgba(214,137,42,.3);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:14px;flex:none}
+  .mock-features{margin-top:20px;padding-top:20px;border-top:1px solid var(--line-d)}
+  .mock-features .lab{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-d);margin-bottom:10px}
+  .mock-features .pills{display:flex;flex-wrap:wrap;gap:8px}
+  .mock-features .pills span{font-family:var(--disp);font-weight:600;font-size:12.5px;color:#dbe6f0;background:rgba(47,120,224,.14);border:1px solid rgba(47,120,224,.32);border-radius:8px;padding:6px 12px}
+  .dashboard-note{margin-top:20px;font-size:13.5px;color:var(--muted);text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
+  @media (min-width:760px){
+    .mock-stats{grid-template-columns:repeat(4,1fr);gap:14px}
   }
 </style>
 </head>
@@ -448,6 +487,57 @@
         <div class="pw-btns"><a class="btn btn-bl btn-sm" href="#">View pathway</a><a class="btn btn-ghost btn-sm" href="#enquiry-form">Enquire about team training</a></div>
       </article>
     </div>
+  </div></section>
+
+  <section id="dashboard-preview" class="dashboard-preview"><div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eye"><span class="eyebrow">Dashboard preview</span> <span class="coming-soon-badge">Coming Soon</span></span>
+      <h2>Know where your team&rsquo;s training stands.</h2>
+      <p class="sub">Give managers clearer oversight of workforce learning without relying on spreadsheets, email trails and missing certificates.</p>
+    </div>
+    <div class="mock-panel" role="img" aria-label="Preview of the coming training oversight dashboard. Not a live feature — figures are illustrative.">
+      <div class="mock-header">
+        <div class="mock-title">Training overview <small>Merlin Care Ltd</small></div>
+        <div class="mock-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+      <div class="mock-body">
+        <div class="mock-stats">
+          <div class="mock-stat">
+            <span class="n">14</span>
+            <span class="l">Staff members</span>
+          </div>
+          <div class="mock-stat">
+            <span class="n">12</span>
+            <span class="l">Safeguarding complete</span>
+            <div class="bar" aria-hidden="true"><i style="width:86%"></i></div>
+          </div>
+          <div class="mock-stat">
+            <span class="n">9</span>
+            <span class="l">Trauma-informed complete</span>
+            <div class="bar" aria-hidden="true"><i style="width:64%"></i></div>
+          </div>
+          <div class="mock-stat">
+            <span class="n">3</span>
+            <span class="l">Courses in progress</span>
+          </div>
+        </div>
+        <div class="mock-alert">
+          <span class="ic" aria-hidden="true">!</span>
+          <span><b>2 certificates</b> requiring attention</span>
+        </div>
+        <div class="mock-features">
+          <span class="lab">What managers will see</span>
+          <div class="pills">
+            <span>Staff progress</span>
+            <span>Course completion</span>
+            <span>Assessment outcomes</span>
+            <span>Certificates</span>
+            <span>Training records</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="dashboard-note">This dashboard is a preview of what&rsquo;s in development &mdash; it&rsquo;s not a live feature yet. Figures shown are illustrative.</p>
   </div></section>
 
   <section id="areas" class="areas"><div class="wrap">

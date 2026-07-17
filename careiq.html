@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CareIQ &mdash; AI Built for Care | London Safeguarding Network</title>
 <meta name="description" content="CareIQ from London Safeguarding Network — artificial intelligence built for the health and social care sector, shaped by care professionals who have run regulated services.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:site_name" content="London Safeguarding Network">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CareIQ — AI Built for Care | London Safeguarding Network">
+<meta property="og:description" content="AI for the health and social care sector, shaped by care professionals who have run regulated services.">
+<meta property="og:url" content="https://lsn-platform.netlify.app/careiq">
+<meta property="og:image" content="https://lsn-platform.netlify.app/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CareIQ — AI Built for Care | London Safeguarding Network">
+<meta name="twitter:description" content="AI for the health and social care sector, shaped by care professionals who have run regulated services.">
+<meta name="twitter:image" content="https://lsn-platform.netlify.app/og-image.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +28,19 @@
   .ci-hero h1{font-size:clamp(34px,5.4vw,58px);color:#fff;font-weight:800;margin-top:18px;letter-spacing:-.025em;max-width:22ch}
   .ci-hero h1 em{font-style:normal;color:var(--blue-l)}
   .ci-hero .lede{margin-top:22px;color:#c3d2e6;font-size:clamp(16px,1.5vw,18px);max-width:64ch}
-  .ci-hero .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+  .ci-hero .hero-credit{margin-top:14px;color:#a3b6d0;font-size:14px;line-height:1.55;max-width:62ch;font-style:italic}
+  .ci-hero .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+
+  /* Founder credentials block */
+  .founder{margin-top:26px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;padding:32px 30px;max-width:82ch}
+  .founder-lede{font-family:var(--disp);font-weight:600;font-size:clamp(17px,2vw,20px);line-height:1.45;color:var(--ink);letter-spacing:-.005em;margin:0 0 22px}
+  .cred-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .cred-list li{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:baseline}
+  .cred-list .cred-k{font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue-d)}
+  .cred-list p{margin:0;font-size:14.5px;color:var(--body);line-height:1.6}
+  @media (max-width:600px){
+    .cred-list li{grid-template-columns:1fr;gap:4px}
+  }
 
   /* Quote / statement sections */
   .q-sec{background:var(--paper)}
@@ -64,6 +87,7 @@
     <span class="eyebrow">CareIQ &middot; AI for care</span>
     <h1>AI built for care &mdash; by people who&rsquo;ve <em>done the job</em>.</h1>
     <p class="lede">London Safeguarding Network is developing artificial intelligence designed specifically for the health and social care sector. Not generic technology adapted for care &mdash; AI shaped by the realities of regulated practice.</p>
+    <p class="hero-credit">Designed by a care consultant and former CQC Registered Manager with direct experience of leading Ofsted-regulated children&rsquo;s homes.</p>
     <div class="cta">
       <a class="btn btn-bl" href="/#enquiry-form">Register your interest</a>
       <a class="btn btn-ghost-d" href="tel:02046180163">Talk to our team</a>
@@ -102,6 +126,30 @@
         <h3>Care Consultants</h3>
         <p>Grounded in the experience of consultants who support services through registration, improvement and inspection.</p>
       </article>
+    </div>
+  </div></section>
+
+  <section class="q-sec"><div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eye"><span class="eyebrow">About the people behind it</span></span>
+      <h2>Real background, not a marketing statement.</h2>
+    </div>
+    <div class="founder">
+      <p class="founder-lede">CareIQ is designed by a care consultant and former CQC Registered Manager who has led and turned around Ofsted-regulated children&rsquo;s homes.</p>
+      <ul class="cred-list">
+        <li>
+          <span class="cred-k">Practice</span>
+          <p>Care consultant supporting services through registration, improvement and inspection.</p>
+        </li>
+        <li>
+          <span class="cred-k">Leadership</span>
+          <p>Former CQC Registered Manager, with direct experience leading and turning around Ofsted-regulated children&rsquo;s homes.</p>
+        </li>
+        <li>
+          <span class="cred-k">Training</span>
+          <p>Certified trainer in Positive Behaviour Support, Safeguarding, Team-Teach and GCM Physical Intervention, among others.</p>
+        </li>
+      </ul>
     </div>
   </div></section>
 

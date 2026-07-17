@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /investor.html
+Disallow: /investor
+Disallow: /thanks.html
+Disallow: /thanks
+
+Sitemap: https://lsn-platform.netlify.app/sitemap.xml
