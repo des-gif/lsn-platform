@@ -1,0 +1,68 @@
+:root{
+  --bg:#0a1628;--bg-2:#0c1e3a;--panel:#11305a;--panel-2:#16386a;
+  --paper:#eef3fa;--paper-2:#e4edf7;--card:#fff;--line:#dfe8f3;--line-d:rgba(255,255,255,.10);
+  --ink:#0b1d3a;--text:#0c1e3c;--muted:#566688;--muted-2:#8090ad;--muted-d:#9fb4d4;
+  --blue:#2f78e0;--blue-d:#1f5fc0;--blue-l:#5fa0ff;--emerald:#10b981;--amber:#d6892a;
+  --disp:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--disp);font-weight:700;line-height:1.12;letter-spacing:-.015em;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--blue-l)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--disp);font-weight:600;font-size:15px;border-radius:999px;padding:12px 22px;cursor:pointer;border:1.5px solid transparent;transition:transform .15s,background .15s,box-shadow .15s,border-color .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-bl{background:var(--blue);color:#fff;box-shadow:0 12px 26px -10px rgba(47,120,224,.6)}
+.btn-bl:hover{background:var(--blue-d)}
+.btn-light{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-light:hover{border-color:var(--blue)}
+.btn-ghost-d{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.24)}
+.btn-ghost-d:hover{border-color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-sm{padding:9px 16px;font-size:14px}
+
+.nav{position:sticky;top:0;z-index:70;background:rgba(10,22,40,.92);backdrop-filter:blur(12px) saturate(140%);border-bottom:1px solid var(--line-d)}
+.nav .row{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+.brand .mk{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),#1f5fc0);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:14px;flex:none}
+.brand b{font-family:var(--disp);font-weight:800;font-size:16px;color:#fff;line-height:1.1}
+.brand span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted-d);margin-top:3px}
+.navlinks{display:none;gap:20px}
+.navlinks a{font-size:14px;color:var(--muted-d);font-weight:500}
+.navlinks a:hover{color:#fff}
+.nav .navcta{display:flex;gap:9px}
+
+section{padding:74px 0}
+.sec-eye{display:flex;align-items:center;gap:12px}
+.sec-eye:before{content:"";width:30px;height:1.5px;background:var(--blue)}
+.sec-head{max-width:66ch}
+.sec-head h2{font-size:clamp(26px,3.5vw,40px);margin:14px 0 0}
+.sec-head p.sub{margin-top:15px;color:var(--muted);max-width:64ch;font-size:16.5px}
+.sec-head .eyebrow{color:var(--blue-d)}
+.sec-head--dark h2{color:#fff}
+.sec-head--dark p.sub{color:var(--muted-d)}
+.sec-head--dark .eyebrow{color:var(--blue-l)}
+
+footer{background:var(--bg);color:var(--muted-d);border-top:1px solid var(--line-d)}
+footer .ftop{display:grid;grid-template-columns:1fr;gap:24px;padding:42px 0 14px}
+footer h4{color:#fff;font-size:14px;font-family:var(--disp);font-weight:700;margin-bottom:12px}
+footer a{color:var(--muted-d);font-size:14px;display:block;margin-bottom:7px}
+footer a:hover{color:var(--blue-l)}
+footer .disc{border-top:1px solid var(--line-d);padding:18px 0 40px;font-size:11.5px;color:var(--muted-2);line-height:1.7;max-width:92ch}
+
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+
+@media (min-width:760px){
+  .navlinks{display:flex}
+  footer .ftop{grid-template-columns:2fr 1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .btn:hover{transform:none}
+  html{scroll-behavior:auto}
+}
