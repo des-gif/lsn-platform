@@ -61,7 +61,6 @@
     if (c.whoFor)   meta.push('<li><span class="k">Who it’s for</span><span>' + esc(c.whoFor)   + '</span></li>');
     if (c.delivery) meta.push('<li><span class="k">Delivery</span><span>'          + esc(c.delivery) + '</span></li>');
     if (c.duration) meta.push('<li><span class="k">Duration</span><span>'          + esc(c.duration) + '</span></li>');
-    if (c.cpd)      meta.push('<li><span class="k">CPD</span><span>'               + esc(c.cpd)      + '</span></li>');
     return '<article class="course">' +
       '<h3>' + esc(c.title) + '</h3>' +
       '<p class="cshort">' + esc(c.short) + '</p>' +

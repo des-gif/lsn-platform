@@ -7,7 +7,6 @@
       "whoFor": "Children's homes, secure and specialist care settings",
       "delivery": "In-person",
       "duration": "3 days (approx.)",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     },
     {
@@ -17,7 +16,6 @@
       "whoFor": "Children's homes, foster carers, schools, youth-facing services",
       "delivery": "Online or in-person",
       "duration": "Approx. 3–4 hours online · 1 day in-person",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     },
     {
@@ -27,7 +25,6 @@
       "whoFor": "Adult social care, supported living, care agencies",
       "delivery": "Online or in-person",
       "duration": "Approx. 3–4 hours online · 1 day in-person",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     },
     {
@@ -37,7 +34,6 @@
       "whoFor": "Residential childcare, therapeutic services, foster carers, care teams",
       "delivery": "Online or in-person",
       "duration": "Approx. 4 hours online · 1 day in-person",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     },
     {
@@ -47,7 +43,6 @@
       "whoFor": "Supported living, learning disability services, adult social care",
       "delivery": "Online or in-person",
       "duration": "Approx. 4–6 hours online · 1–2 days in-person",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     },
     {
@@ -57,7 +52,6 @@
       "whoFor": "Registered Managers, Deputy Managers, Responsible Individuals",
       "delivery": "Blended (online + in-person)",
       "duration": "Programme delivered across multiple sessions",
-      "cpd": "CPD-evidenced",
       "price": "Team pricing available"
     }
   ]
