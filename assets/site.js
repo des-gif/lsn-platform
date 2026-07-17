@@ -80,7 +80,7 @@
       '<ul class="cmeta">' + meta.join('') + '</ul>' +
       (c.price ? '<div class="cprice">' + esc(c.price) + '</div>' : '') +
       '<div class="cbtns">' +
-        '<a class="btn btn-bl btn-sm" href="#">View course</a>' +
+        '<a class="btn btn-bl btn-sm" href="https://portal.londonsafeguardingnetwork.com/course-catalogue" target="_blank" rel="noopener">View course</a>' +
         '<a class="btn btn-ghost btn-sm" href="/#enquiry-form">Train my team</a>' +
       '</div>' +
     '</article>';
