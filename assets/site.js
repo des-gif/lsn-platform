@@ -35,14 +35,27 @@
     update();
   }
 
-  // Popular Training — hydrate from courses.json (static HTML is fallback if fetch fails)
+  // Course rendering — Popular Training on homepage + sector recommended courses
   var popular = document.getElementById('popular-grid');
-  if (popular && window.fetch) {
+  var sectorContainers = document.querySelectorAll('[data-render="sector-courses"]');
+  if ((popular || sectorContainers.length) && window.fetch) {
     fetch('/assets/courses.json')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         if (!data || !Array.isArray(data.courses)) return;
-        popular.innerHTML = data.courses.map(courseCard).join('');
+        if (popular) {
+          popular.innerHTML = data.courses.map(courseCard).join('');
+        }
+        if (sectorContainers.length) {
+          var bySlug = {};
+          data.courses.forEach(function (c) { bySlug[c.slug] = c; });
+          Array.prototype.forEach.call(sectorContainers, function (container) {
+            var slugsAttr = container.getAttribute('data-slugs') || '';
+            var slugs = slugsAttr.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+            var cards = slugs.map(function (s) { return bySlug[s]; }).filter(Boolean);
+            if (cards.length) container.innerHTML = cards.map(courseCard).join('');
+          });
+        }
       })
       .catch(function () { /* keep static fallback */ });
   }
@@ -68,7 +81,7 @@
       (c.price ? '<div class="cprice">' + esc(c.price) + '</div>' : '') +
       '<div class="cbtns">' +
         '<a class="btn btn-bl btn-sm" href="#">View course</a>' +
-        '<a class="btn btn-ghost btn-sm" href="#enquiry-form">Train my team</a>' +
+        '<a class="btn btn-ghost btn-sm" href="/#enquiry-form">Train my team</a>' +
       '</div>' +
     '</article>';
   }
