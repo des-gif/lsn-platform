@@ -2,12 +2,16 @@
   "courses": [
     {
       "slug": "physical-intervention-l3",
-      "title": "Physical Intervention — Level 3 Practitioner Programme",
-      "short": "Practical physical intervention training built around real-world care settings — prevention, de-escalation, legal responsibilities and safer intervention skills.",
-      "whoFor": "Children's homes, secure and specialist care settings",
-      "delivery": "In-person",
-      "duration": "3 days (approx.)",
-      "price": "Team pricing available"
+      "title": "Level 3 Practitioner Physical Intervention",
+      "short": "A blended Level 3 practitioner programme — two online theory modules plus a face-to-face practical day covering safe, lawful de-escalation and holds. Suitable for children's and adult services.",
+      "whoFor": "Children's services and adult services",
+      "delivery": "Blended (online + face-to-face)",
+      "duration": "3–4 hours online · plus a face-to-face practical day arranged with LSN",
+      "price": "£200 per staff member",
+      "modules": "Module 1: Prevention, Proactive Care and De-escalation · Module 2: Legal Framework, Safe Practice and Accountability",
+      "learning": "14 hours of learning (supports staff CPD records)",
+      "accreditation": "Accredited by Advantage Accreditation",
+      "portalUrl": "https://portal.londonsafeguardingnetwork.com/catalogue/f345c2f3-7423-41e9-a253-a810c4ea9af0"
     },
     {
       "slug": "safeguarding-children",
