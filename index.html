@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>London Safeguarding Network — Specialist safeguarding &amp; care training</title>
+<title>London Safeguarding Network — Accredited safeguarding &amp; specialist training</title>
 <meta name="description" content="London Safeguarding Network delivers specialist safeguarding and care training — online and in person — for children's homes, adult social care, supported accommodation, foster carers and schools.">
-<meta property="og:title" content="London Safeguarding Network — Specialist safeguarding &amp; care training">
-<meta property="og:description" content="Practical, sector-specific safeguarding and care training for children's and adult services. Level 3 Practitioner Physical Intervention now accredited by Advantage Accreditation.">
+<meta property="og:title" content="London Safeguarding Network — Accredited safeguarding &amp; specialist training">
+<meta property="og:description" content="Accredited safeguarding and specialist training for children's services and adult social care. Level 3 Practitioner Physical Intervention now accredited by Advantage Accreditation.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="London Safeguarding Network">
-<meta name="twitter:description" content="Practical, sector-specific safeguarding and care training for children's and adult services.">
+<meta name="twitter:description" content="Accredited safeguarding and specialist training for children's services and adult social care.">
 <link rel="icon" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +36,7 @@
       <a href="#training">Training</a>
       <a href="#simplicity">Simplicity</a>
       <a href="#resources">Resources</a>
+      <a href="#cost-calculator">Cost calculator</a>
       <a href="#join" class="btn btn-gold btn-sm">Join the Network</a>
     </nav>
   </div>
@@ -48,7 +49,7 @@
     <div class="wrap">
       <div class="hero-head">
         <span class="eyebrow">London Safeguarding Network</span>
-        <h1 id="hero-h1">Accredited safeguarding and care training for children's and adult services</h1>
+        <h1 id="hero-h1">Accredited safeguarding and specialist training for children's services and adult social care</h1>
       </div>
       <div class="hero-image">
         <img src="/assets/img/hero-safer-care.jpg"
@@ -56,7 +57,7 @@
              fetchpriority="high" width="1920" height="799">
       </div>
       <div class="hero-copy">
-        <p class="lead">Specialist safeguarding and care training for children's and adult services — practical, sector-specific and built around real shifts.</p>
+        <p class="lead">Specialist safeguarding and practical training for staff working in children's services and adult social care.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#training">Explore Training</a>
           <a class="btn btn-outline" href="#join">Join the Network</a>
@@ -100,12 +101,12 @@
       <div>
         <span class="eyebrow">Flagship programme</span>
         <h2 id="pi-h2">Accredited Level 3 Practitioner Physical Intervention</h2>
-        <p>A blended Level 3 practitioner programme — two online theory modules plus a face-to-face practical day covering safe, lawful de-escalation and holds. Suitable for children's and adult services.</p>
+        <p>A blended Level 3 practitioner programme — two online theory modules plus a face-to-face practical day covering safe, lawful de-escalation and holds. Suitable for children's services and adult social care.</p>
         <ul class="pi-meta">
           <li><strong>Delivery</strong>Blended (online + face-to-face)</li>
           <li><strong>Duration</strong>3–4 hours online · plus a face-to-face practical day arranged with LSN</li>
           <li><strong>Learning</strong>14 hours of learning (supports staff CPD records)</li>
-          <li><strong>Suitable for</strong>Children's services &amp; adult services</li>
+          <li><strong>Suitable for</strong>Children's services &amp; adult social care</li>
         </ul>
         <div class="pi-price">£200 per staff member</div>
         <div class="pi-cta">
@@ -172,6 +173,231 @@
         <a class="btn btn-primary" href="#join">View Resources</a>
       </div>
     </div>
+  </section>
+
+  <!-- Course cost calculator — self-contained; colour vars mapped to site brand tokens. -->
+  <section class="lsn-calc" id="cost-calculator" aria-labelledby="lsn-calc-title">
+    <style>
+      .lsn-calc{
+        --calc-green:var(--green); --calc-green-2:var(--green-2); --calc-gold:var(--gold);
+        --calc-cream:var(--paper); --calc-ink:var(--ink); --calc-muted:var(--ink-muted); --calc-line:var(--paper-2);
+        font-family: inherit; color:var(--calc-ink); background:var(--calc-cream);
+        border-radius:14px; padding:clamp(20px,4vw,40px); max-width:980px; margin:40px auto;
+      }
+      .lsn-calc *{box-sizing:border-box}
+      .lsn-calc .eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;color:var(--calc-green-2);margin:0 0 6px}
+      .lsn-calc h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2rem);color:var(--calc-green);text-wrap:balance}
+      .lsn-calc .intro{margin:0 0 24px;color:var(--calc-muted);max-width:62ch;line-height:1.55}
+      .lsn-calc .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+      @media (max-width:760px){.lsn-calc .grid{grid-template-columns:1fr}}
+      .lsn-calc .panel{background:#fff;border:1px solid var(--calc-line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px;align-self:start}
+      .lsn-calc label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
+      .lsn-calc .hint{font-size:.82rem;color:var(--calc-muted);margin-top:4px}
+      .lsn-calc select,.lsn-calc input[type=number]{width:100%;padding:10px 12px;border:1px solid var(--calc-line);border-radius:8px;font:inherit;background:#fff;color:var(--calc-ink)}
+      .lsn-calc select:focus,.lsn-calc input:focus{outline:3px solid rgba(201,162,39,.45);outline-offset:1px;border-color:var(--calc-gold)}
+      .lsn-calc .staff-row{display:flex;gap:12px;align-items:center}
+      .lsn-calc input[type=range]{flex:1;accent-color:var(--calc-green-2)}
+      .lsn-calc .staff-row input[type=number]{width:90px}
+      .lsn-calc details{border-top:1px solid var(--calc-line);padding-top:12px}
+      .lsn-calc summary{cursor:pointer;font-weight:600;color:var(--calc-green-2)}
+      .lsn-calc .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+      @media (max-width:420px){.lsn-calc .two{grid-template-columns:1fr}}
+      .lsn-calc .result{background:var(--calc-green);color:#fff;border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px}
+      .lsn-calc .result .label{font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;opacity:.8}
+      .lsn-calc .big{font-size:clamp(2rem,5vw,2.8rem);font-weight:800;line-height:1.05;font-variant-numeric:tabular-nums}
+      .lsn-calc .rows{display:flex;flex-direction:column;gap:8px;border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+      .lsn-calc .row{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums}
+      .lsn-calc .row span:first-child{opacity:.85}
+      .lsn-calc .saving{background:rgba(201,162,39,.16);border:1px solid rgba(201,162,39,.55);border-radius:10px;padding:12px 14px;line-height:1.45}
+      .lsn-calc .saving strong{color:#F3D67A}
+      .lsn-calc .cta{display:inline-block;text-align:center;background:var(--calc-gold);color:var(--calc-green);font-weight:800;text-decoration:none;padding:13px 18px;border-radius:9px}
+      .lsn-calc .cta:hover{filter:brightness(1.05)}
+      .lsn-calc .cta:focus-visible{outline:3px solid #fff;outline-offset:2px}
+      .lsn-calc .small{font-size:.8rem;opacity:.8;line-height:1.45}
+    </style>
+
+    <p class="eyebrow">Plan your training budget</p>
+    <h2 id="lsn-calc-title">Course cost calculator</h2>
+    <p class="intro">See what it costs to train your team, and how much staff time you get back with LSN's blended format: online theory your staff complete around their shifts, plus one practical day.</p>
+
+    <div class="grid">
+      <form class="panel" id="lsn-calc-form" novalidate>
+        <div>
+          <label for="lsn-calc-course">Course</label>
+          <select id="lsn-calc-course"></select>
+          <p class="hint" id="lsn-calc-course-hint"></p>
+        </div>
+
+        <div>
+          <label for="lsn-calc-staff-num">Number of staff to train</label>
+          <div class="staff-row">
+            <input type="range" id="lsn-calc-staff-range" min="1" max="100" value="10" aria-label="Number of staff (slider)">
+            <input type="number" id="lsn-calc-staff-num" min="1" max="500" value="10" inputmode="numeric">
+          </div>
+        </div>
+
+        <details>
+          <summary>Compare with classroom-only training (optional)</summary>
+          <p class="hint">Typical figures are filled in. Change them to match your service.</p>
+          <div class="two">
+            <div>
+              <label for="lsn-calc-rate">Cover cost per hour (£)</label>
+              <input type="number" id="lsn-calc-rate" min="0" step="0.5" value="15">
+              <p class="hint">What you pay to cover a shift hour.</p>
+            </div>
+            <div>
+              <label for="lsn-calc-classroom-hours">Hours off the floor: classroom-only</label>
+              <input type="number" id="lsn-calc-classroom-hours" min="0" step="0.5" value="15">
+              <p class="hint">E.g. two full training days.</p>
+            </div>
+            <div>
+              <label for="lsn-calc-lsn-hours">Hours off the floor: LSN blended</label>
+              <input type="number" id="lsn-calc-lsn-hours" min="0" step="0.5" value="7.5">
+              <p class="hint">The practical day. Online theory fits around shifts.</p>
+            </div>
+          </div>
+        </details>
+      </form>
+
+      <div class="result" aria-live="polite">
+        <div>
+          <div class="label">Total course fees</div>
+          <div class="big" id="lsn-calc-total">£0</div>
+        </div>
+        <div class="rows">
+          <div class="row"><span>Price per staff member</span><span id="lsn-calc-each">£0</span></div>
+          <div class="row"><span>Staff</span><span id="lsn-calc-count">0</span></div>
+          <div class="row"><span>Staff hours saved (vs classroom-only)</span><span id="lsn-calc-hours">0</span></div>
+        </div>
+        <div class="saving" id="lsn-calc-saving"></div>
+        <a class="cta" id="lsn-calc-cta" href="https://portal.londonsafeguardingnetwork.com/course-catalogue">Book places</a>
+        <p class="small">Planning more than 20 staff, or several services? Contact us for a group quote. Figures are estimates to help you plan; your final price is confirmed at booking.</p>
+      </div>
+    </div>
+
+    <script>
+    (function(){
+      var root = document.getElementById('cost-calculator'); if(!root) return;
+      var PI_URL = "https://portal.londonsafeguardingnetwork.com/catalogue/f345c2f3-7423-41e9-a253-a810c4ea9af0";
+      var CAT_URL = "https://portal.londonsafeguardingnetwork.com/course-catalogue";
+      var CATALOGUE = [
+        ["Physical Intervention", [
+          ["Level 3 Practitioner Physical Intervention", 200, "Blended: two online theory modules plus a face-to-face practical day. Accredited by Advantage Accreditation.", PI_URL]
+        ]],
+        ["Health & Safety", [
+          ["Safe Handling and Therapeutic Administration of Medication in Health and Social Care Settings"],
+          ["Emergency First Aid Through a Trauma-Informed Lens"],
+          ["Fire Marshal Responsibilities in Sensitive Care Settings"],
+          ["First Aid for Children: Trauma-Informed Emergency Response"],
+          ["Emergency First Aid at Work (Theory)"]
+        ]],
+        ["Child protection", [
+          ["Safeguarding Children (Pt. 1): Trauma-Informed and Therapeutic Practice"],
+          ["Safeguarding Children (Pt. 2): Trauma-Informed and Therapeutic Practice"],
+          ["Child Criminal Exploitation: Identifying and Responding"],
+          ["Child Safeguarding: Advanced Professional Practice (2026)"],
+          ["Missing Children in Residential Care: Policy, Practice, and Prevention"],
+          ["Child Sexual Exploitation: Identifying and Responding"]
+        ]],
+        ["Safeguarding", [
+          ["Safeguarding: The Foundations"],
+          ["Adult Safeguarding: Trauma-Informed and Therapeutic Approach"],
+          ["Ensuring Safety and Compliance in Children's Homes"],
+          ["Whistleblowing: Speaking Up for Safety in Care Settings"],
+          ["Emotional Safety in Safeguarding Children: A Practical Guide"],
+          ["Anti-Bullying: Roles, Policies, and Strategies"],
+          ["Safer Recruitment in Children's Homes: Best Practices"]
+        ]],
+        ["Care practice", [
+          ["Professional Curiosity: The Key to Preventing Restraint"],
+          ["PBS: Therapeutic Approaches to Challenging Behaviour"]
+        ]],
+        ["Trauma-informed", [
+          ["Therapeutic Parenting Practices"],
+          ["ACEs: Understanding and Addressing Childhood Trauma"]
+        ]],
+        ["Compliance", [
+          ["Equality Act 2010: Practical Guidance for UK Social Care Settings"],
+          ["Compliance Bundle"]
+        ]],
+        ["Leadership", [
+          ["Safe Service Handbook: Managing Safety and Communication"],
+          ["Mastering Ofsted Quality Standards: Application and Practice"],
+          ["Running Compliant and Sustainable Children's Homes: A Practical Guide"],
+          ["Support Worker Leadership: Best Practice in UK Residential Care"]
+        ]],
+        ["Specialist", [
+          ["Introduction to Learning Disabilities"]
+        ]]
+      ];
+      var $ = function(id){ return document.getElementById(id); };
+      var sel=$('lsn-calc-course'), range=$('lsn-calc-staff-range'), num=$('lsn-calc-staff-num'),
+          rate=$('lsn-calc-rate'), ch=$('lsn-calc-classroom-hours'), lh=$('lsn-calc-lsn-hours');
+      var gbp = new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP',maximumFractionDigits:0});
+      var hrs = new Intl.NumberFormat('en-GB',{maximumFractionDigits:1});
+      var courses = [];
+
+      function parsePrice(p){
+        if (typeof p === 'number') return p;
+        if (!p) return null;
+        var m = String(p).replace(/,/g,'').match(/£\s*(\d+(?:\.\d+)?)/);
+        return m ? parseFloat(m[1]) : null;
+      }
+      function build(){
+        courses = []; sel.innerHTML = '';
+        CATALOGUE.forEach(function(group){
+          var og = document.createElement('optgroup'); og.label = group[0];
+          group[1].forEach(function(c){
+            var course = { title:c[0], price:(c[1]==null?null:c[1]), note:c[2]||'', url:c[3]||null };
+            var o = document.createElement('option'); o.value = courses.length;
+            o.textContent = course.title + (course.price ? ' (' + gbp.format(course.price) + ' per staff member)' : ' (coming soon)');
+            og.appendChild(o); courses.push(course);
+          });
+          sel.appendChild(og);
+        });
+        calc();
+      }
+      function clampStaff(v){ v = Math.round(Number(v)||1); return Math.max(1, Math.min(500, v)); }
+      function calc(){
+        var c = courses[Number(sel.value)||0];
+        var n = clampStaff(num.value);
+        var priced = !!c.price;
+        var saved = Math.max(0,(Number(ch.value)||0)-(Number(lh.value)||0)) * n;
+        var coverSaved = saved * (Number(rate.value)||0);
+        $('lsn-calc-total').textContent = priced ? gbp.format(c.price * n) : 'Price on request';
+        $('lsn-calc-each').textContent = priced ? gbp.format(c.price) : 'Coming soon';
+        $('lsn-calc-count').textContent = n;
+        $('lsn-calc-hours').textContent = hrs.format(saved) + ' hrs';
+        $('lsn-calc-course-hint').textContent = c.note || (priced ? '' : 'This course is coming soon. Register your interest and we will send you pricing as soon as it opens.');
+        $('lsn-calc-saving').innerHTML = saved > 0
+          ? 'Compared with classroom-only training, your team spends <strong>' + hrs.format(saved) + ' fewer hours off the floor</strong>, worth about <strong>' + gbp.format(coverSaved) + '</strong> in shift cover.'
+          : 'Adjust the comparison figures to see the staff time you save.';
+        var cta = $('lsn-calc-cta');
+        cta.textContent = priced ? 'Book places' : 'View course catalogue';
+        cta.href = c.url || CAT_URL;
+      }
+      range.addEventListener('input', function(){ num.value = range.value; calc(); });
+      num.addEventListener('input', function(){ var v=clampStaff(num.value); range.value=Math.min(100,v); calc(); });
+      [sel,rate,ch,lh].forEach(function(el){ el.addEventListener('input', calc); el.addEventListener('change', calc); });
+      $('lsn-calc-form').addEventListener('submit', function(e){ e.preventDefault(); });
+      build();
+
+      try {
+        fetch('/assets/courses.json',{cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(data){
+          if (!data) return;
+          var arr = Array.isArray(data) ? data : (data.courses || []);
+          var changed = false;
+          arr.forEach(function(j){
+            var price = parsePrice(j.price); if (!price) return;
+            CATALOGUE.forEach(function(g){ g[1].forEach(function(c){
+              if (c[0].toLowerCase() === String(j.title||'').toLowerCase() && c[1] !== price){ c[1] = price; changed = true; }
+            }); });
+          });
+          if (changed){ var keep = sel.value; build(); sel.value = keep; calc(); }
+        }).catch(function(){});
+      } catch(e){}
+    })();
+    </script>
   </section>
 
   <!-- 7. CLOSING — banner-8 has baked-in headline. Contained. No overlay. -->
