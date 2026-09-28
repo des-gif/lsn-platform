@@ -248,3 +248,7 @@ html.apps-enabled .app-band{display:block}
 .site-footer a:hover{color:var(--gold)}
 .site-footer .disc{grid-column:1/-1;font-size:12px;color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.1);padding-top:24px;margin-top:16px;line-height:1.6}
 @media (max-width:800px){.site-footer .wrap{grid-template-columns:1fr;gap:24px}}
+
+/* Clear the sticky header when jumping to any in-page anchor.
+   .site-header renders ~80px tall; leave 16px breathing room above. */
+[id]{scroll-margin-top:96px}

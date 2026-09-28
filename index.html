@@ -8,10 +8,16 @@
 <meta property="og:title" content="London Safeguarding Network — Accredited safeguarding &amp; specialist training">
 <meta property="og:description" content="Accredited safeguarding and specialist training for children's services and adult social care. Level 3 Practitioner Physical Intervention now accredited by Advantage Accreditation.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="London Safeguarding Network — accredited safeguarding & specialist training">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="London Safeguarding Network">
 <meta name="twitter:description" content="Accredited safeguarding and specialist training for children's services and adult social care.">
+<meta name="twitter:image" content="/og-image.png">
+<meta name="twitter:image:alt" content="London Safeguarding Network — accredited safeguarding & specialist training">
 <link rel="icon" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,6 +67,9 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="#training">Explore Training</a>
           <a class="btn btn-outline" href="#join">Join the Network</a>
+          <button type="button" class="btn btn-video" data-video-open aria-haspopup="dialog" aria-controls="video-modal">
+            <span class="play-icon" aria-hidden="true">▶</span> Watch our video
+          </button>
         </div>
       </div>
     </div>
@@ -134,15 +143,131 @@
 
   <!-- 4. SIMPLICITY -->
   <section class="section feature-band" id="simplicity" aria-labelledby="simp-h2">
+    <style>
+      #simplicity .split-copy .lead{max-width:52ch}
+      #simplicity .simp-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+      #simplicity .simp-inner{max-width:var(--wrap);margin:0 auto}
+
+      #simplicity .simp-audience{
+        display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+        margin-top:56px;
+      }
+      #simplicity .simp-card{
+        background:var(--white);border-radius:var(--radius);
+        box-shadow:var(--shadow);padding:26px 24px 24px;
+        border-top:3px solid var(--gold);
+        display:flex;flex-direction:column;
+      }
+      #simplicity .simp-card-eyebrow{
+        display:block;font-size:12px;font-weight:700;letter-spacing:.16em;
+        text-transform:uppercase;color:var(--green);margin-bottom:10px;
+      }
+      #simplicity .simp-card h3{
+        color:var(--ink);font-size:22px;line-height:1.25;margin:0 0 10px;
+      }
+      #simplicity .simp-card p{
+        color:var(--ink-muted);margin:0;font-size:16px;line-height:1.55;
+      }
+
+      #simplicity .simp-steps{
+        background:var(--green);color:var(--white);
+        border-radius:var(--radius-lg);padding:34px 34px 30px;
+        margin-top:48px;box-shadow:var(--shadow-lg);
+      }
+      #simplicity .simp-steps-title{
+        color:var(--white);font-size:24px;margin:0 0 22px;letter-spacing:-.01em;
+      }
+      #simplicity .simp-steps-list{
+        list-style:none;padding:0;margin:0;
+        display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+      }
+      #simplicity .simp-steps-list li{
+        background:rgba(255,255,255,.06);border-radius:12px;
+        padding:18px 18px 20px;
+        display:grid;grid-template-columns:auto 1fr;column-gap:14px;
+        align-items:baseline;
+      }
+      #simplicity .simp-step-num{
+        grid-row:1 / span 2;grid-column:1;
+        font-family:var(--font);font-weight:800;font-size:34px;color:var(--gold);
+        line-height:1;align-self:start;
+      }
+      #simplicity .simp-step-name{
+        grid-row:1;grid-column:2;
+        font-weight:700;font-size:12px;letter-spacing:.16em;
+        text-transform:uppercase;color:var(--gold);
+      }
+      #simplicity .simp-step-body{
+        grid-row:2;grid-column:2;
+        color:rgba(255,255,255,.92);font-size:16px;line-height:1.45;margin-top:4px;
+      }
+      #simplicity .simp-trust{
+        margin:22px 0 0;font-size:14px;color:rgba(255,255,255,.75);
+        border-top:1px solid rgba(255,255,255,.14);padding-top:16px;
+      }
+
+      @media (max-width:900px){
+        #simplicity .simp-audience{grid-template-columns:1fr}
+        #simplicity .simp-steps-list{grid-template-columns:1fr}
+        #simplicity .simp-steps{padding:26px 22px 24px}
+      }
+    </style>
+
     <div class="split">
       <div class="split-image">
         <img src="/assets/img/simplicity-tablet.jpg" alt="Simplicity Complex Care Management System dashboard on a tablet." loading="lazy" width="1821" height="864">
       </div>
       <div class="split-copy">
-        <span class="eyebrow">Complex Care Management System</span>
-        <h2 id="simp-h2">Simplicity: one system, every record, inspection-ready every day.</h2>
-        <p class="lead">The all-in-one records and evidence platform for children's and adult social care from Webb Care Consultancy. Records, evidence, oversight — in one place.</p>
-        <a class="btn btn-primary" href="https://webbcareconsultancy.com/simplicity" target="_blank" rel="noopener" data-simplicity-link>Find out more</a>
+        <span class="eyebrow">Simplicity · Bespoke AI for care</span>
+        <h2 id="simp-h2">Your home, understood.</h2>
+        <p class="lead">We work alongside children's homes and adult care services to build private, personalised AI, shaped around your people, your records and your regulator. It watches the detail quietly, so you see what matters, when it matters.</p>
+        <div class="simp-cta">
+          <a class="btn btn-primary" href="#join">Book a private conversation</a>
+          <a class="btn btn-outline" href="https://webbcareconsultancy.com/simplicity" target="_blank" rel="noopener" data-simplicity-link>See Simplicity</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="simp-inner">
+      <div class="simp-audience" aria-label="Who Simplicity is for">
+        <article class="simp-card">
+          <span class="simp-card-eyebrow">Owners and investors</span>
+          <h3>See your investment clearly.</h3>
+          <p>Occupancy, staffing, incidents and compliance in one calm view, without waiting for the monthly report.</p>
+        </article>
+        <article class="simp-card">
+          <span class="simp-card-eyebrow">Responsible Individuals and Registered Managers</span>
+          <h3>Know before the inspector does.</h3>
+          <p>Patterns, gaps and early warnings drawn from your own records, ready for Reg 44, Reg 45, Ofsted or CQC.</p>
+        </article>
+        <article class="simp-card">
+          <span class="simp-card-eyebrow">Staff on shift</span>
+          <h3>Answers in the moment.</h3>
+          <p>Guidance, policies and recording prompts on their phone, in your home's own language.</p>
+        </article>
+      </div>
+
+      <div class="simp-steps" aria-label="How Simplicity is built">
+        <h3 class="simp-steps-title">Built with you, not sold to you.</h3>
+        <ol class="simp-steps-list">
+          <li>
+            <span class="simp-step-num">1</span>
+            <span class="simp-step-name">Discover</span>
+            <span class="simp-step-body">We learn how your home really runs.</span>
+          </li>
+          <li>
+            <span class="simp-step-num">2</span>
+            <span class="simp-step-name">Build</span>
+            <span class="simp-step-body">We shape the AI around your records, policies and people.</span>
+          </li>
+          <li>
+            <span class="simp-step-num">3</span>
+            <span class="simp-step-name">Live</span>
+            <span class="simp-step-body">Your team uses it every day, and we refine it together.</span>
+          </li>
+        </ol>
+        <p class="simp-trust">Private by design. Your home's information is only ever used for your home.</p>
       </div>
     </div>
   </section>
@@ -442,6 +567,100 @@
     </div>
   </div>
 </footer>
+
+<!-- Video lightbox (Watch our video) -->
+<style>
+  .btn-video{
+    background:transparent;color:var(--ink);
+    border-color:rgba(18,38,27,.22);box-shadow:none;
+  }
+  .btn-video:hover{
+    background:transparent;color:var(--green);
+    border-color:var(--green);transform:none;
+  }
+  .btn-video .play-icon{color:var(--green);margin-right:6px;font-size:.95em}
+
+  #video-modal[hidden]{display:none !important}
+  #video-modal{
+    position:fixed;inset:0;z-index:9999;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+  }
+  #video-modal .video-modal-bg{
+    position:absolute;inset:0;background:rgba(6,20,14,.86);
+    -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+  }
+  #video-modal .video-modal-frame{
+    position:relative;width:min(1120px,100%);
+    aspect-ratio:16/9;max-height:calc(100vh - 48px);
+    background:#000;border-radius:14px;overflow:hidden;
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+  }
+  #video-modal .video-modal-frame video{
+    width:100%;height:100%;display:block;background:#000;
+  }
+  #video-modal .video-modal-close{
+    position:absolute;top:-14px;right:-14px;
+    width:44px;height:44px;border-radius:50%;
+    background:#fff;color:var(--ink);border:0;
+    font-size:26px;line-height:1;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:2;
+  }
+  #video-modal .video-modal-close:hover{background:var(--gold);color:var(--ink)}
+  #video-modal .video-modal-close:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+  @media (max-width:640px){
+    #video-modal{padding:12px}
+    #video-modal .video-modal-close{top:10px;right:10px}
+  }
+  body.video-open{overflow:hidden}
+</style>
+
+<div id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+  <div class="video-modal-bg" data-video-close aria-hidden="true"></div>
+  <div class="video-modal-frame">
+    <button type="button" class="video-modal-close" aria-label="Close video" data-video-close>&times;</button>
+    <h2 id="video-modal-title" class="sr-only">Watch our video</h2>
+    <video id="video-modal-player"
+           controls playsinline preload="none"
+           src="https://portal.londonsafeguardingnetwork.com/videos/pi-promo-1080p.mp4"
+           poster="https://portal.londonsafeguardingnetwork.com/videos/pi-promo-poster.jpg"></video>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var modal = document.getElementById('video-modal');
+    if(!modal) return;
+    var player = document.getElementById('video-modal-player');
+    var closeBtn = modal.querySelector('.video-modal-close');
+    var lastFocus = null;
+
+    function open(){
+      lastFocus = document.activeElement;
+      modal.hidden = false;
+      document.body.classList.add('video-open');
+      setTimeout(function(){ if(closeBtn) closeBtn.focus(); }, 20);
+    }
+    function close(){
+      modal.hidden = true;
+      document.body.classList.remove('video-open');
+      try { player.pause(); } catch(e){}
+      try { player.currentTime = 0; } catch(e){}
+      if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+    }
+
+    document.querySelectorAll('[data-video-open]').forEach(function(b){
+      b.addEventListener('click', function(e){ e.preventDefault(); open(); });
+    });
+    modal.querySelectorAll('[data-video-close]').forEach(function(b){
+      b.addEventListener('click', function(e){ e.preventDefault(); close(); });
+    });
+    document.addEventListener('keydown', function(e){
+      if(!modal.hidden && (e.key === 'Escape' || e.key === 'Esc')) close();
+    });
+  })();
+</script>
 
 </body>
 </html>
