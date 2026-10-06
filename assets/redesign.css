@@ -241,6 +241,7 @@ html.apps-enabled .app-band{display:block}
 
 /* Footer */
 .site-footer{background:var(--green-3);color:rgba(255,255,255,.78);padding:56px 24px 36px;margin-top:0}
+.site-footer p{color:rgba(255,255,255,.85)}
 .site-footer .wrap{max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
 .site-footer img.footer-logo{height:56px;width:auto;margin-bottom:14px}
 .site-footer h4{color:var(--white);font-size:14px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px}
